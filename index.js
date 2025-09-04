@@ -10,7 +10,7 @@ const FILE_PATH = "./data.json";
 // Define a random date within the past 6 years to the current date
 const randomDate = () => {
   const currentDate = moment(); // Current date
-  const sixYearsAgo = moment().subtract(5, "years"); // Date 6 years ago
+  const sixYearsAgo = moment().subtract(6, "years"); // Date 6 years ago
 
   // Generate a random timestamp between sixYearsAgo and currentDate
   const randomTimestamp = random.integer(sixYearsAgo.valueOf(), currentDate.valueOf());
